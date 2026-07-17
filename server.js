@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/users', userRoutes);
 
 // System Modules
-app.use('/api/systems/purchase', require('./src/systems/purchase/purchase.routes'));
+app.use('/api/purchase', require('./src/purchase/routes'));
 
 // Basic health check route
 app.get('/', (req, res) => {
